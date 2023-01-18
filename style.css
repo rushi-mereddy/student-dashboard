@@ -1,18 +1,21 @@
 body{
     margin: auto;
     /* overflow-x: hidden; */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
 }
 
 [data-bs-theme=light]{
   --bs-body-bg: #EBF1F6;
-  --bs-streak-bg-color: #1b7dda;
+  --bs-streak-bg-color: #1C92FF;
   --bs-panel-text-color: #707070;
   --bs-panel-text-color-active: #18265D;
   --bs-new-card-bg: #ffffff;
+  --bs-enroll-nav-tabs-link-active-bg: #ffffff !important;
+  
 }
 [data-bs-theme=dark]{
   --bs-body-color: #e5e7e9;
-  --bs-streak-bg-color: #1b7dda;
+  --bs-streak-bg-color: #1C92FF;
   --bs-panel-text-color:#9e9e9e;
 }
 
@@ -167,6 +170,7 @@ body{
 
   .card{
     background-color: var(--bs-new-card-bg);
+    border: none;
   }
   .streak-div{
     display: flex;
@@ -186,6 +190,38 @@ body{
     justify-content: center;
     border-radius: 50%;
   }
+
+
+  /* Enrollments start */
+  .extern-count{
+    background-color: #FFAE35;
+    margin: auto;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 10px;
+  }
+
+  .nav-tabs .nav-item.show .nav-link, 
+  .nav-tabs .nav-link.active {
+    background-color: var(--bs-enroll-nav-tabs-link-active-bg);
+  }
+
+  .tab-content{
+    border-top: none;
+  }
+
+  .nav-tabs {
+
+    border-bottom: none !important;
+  }
+
+  .enroll-nav-link{
+    border-radius: 0.375rem;
+  }
+
+
+  /* Enrollments end */
 
 
 /* Dashboard end */
